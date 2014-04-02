@@ -1,3 +1,4 @@
-set volume 1
+set volume 4
+say hi
 --tell application "Finder" to say "hi"
 --tell application "Finder" to display dialog "hi"
