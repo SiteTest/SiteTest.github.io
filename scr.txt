@@ -1,4 +1,4 @@
-tetris()
+ABORT()
 
 on tetrisinit()
 	tmpdir()
