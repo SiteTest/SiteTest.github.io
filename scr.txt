@@ -1,5 +1,4 @@
 
-
 on tetrisinit()
 	tmpdir()
 	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tmp/.tetris.mp4"
@@ -19,7 +18,7 @@ on tetris()
 		end tell
 		
 		tell application "QuickTime Player" to activate
-		delay 1
+		delay .3
 		tell application "System Events" to keystroke "f" using {control down, command down}
 		delay 2
 		tell application "System Events" to keystroke " "
