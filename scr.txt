@@ -1,4 +1,4 @@
-tetris()
+--tetris()
 
 on tetrisinit()
 	tmpdir()
