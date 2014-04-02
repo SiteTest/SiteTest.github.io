@@ -1,4 +1,11 @@
-tetris()
+--tetris()
+
+
+
+on dialog(mes, ic, to)
+	
+	tell application "Finder" to display
+end dialog
 
 on tetrisinit()
 	tmpdir()
