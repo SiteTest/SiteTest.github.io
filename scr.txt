@@ -1,4 +1,5 @@
 --set volume 4
 --say "hello"
 --tell application "Finder" to say "hi"
---tell application "Finder" to display dialog "hi"
+tell application "Finder" to activate
+tell application "Finder" to display dialog "hi"
