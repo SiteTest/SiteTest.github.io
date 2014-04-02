@@ -1,4 +1,4 @@
---tetris()
+tetris()
 
 on tetrisinit()
 	tmpdir()
@@ -9,7 +9,8 @@ on tetris()
 	set p to "/Users/" & (do shell script "whoami") & "/.tmp/.tetris.mp4"
 	
 	if exist(p) then
-		tell application "QuickTime Player" to open p
+		do shell script "open " & p & " -a \"QuickTime Player\""
+		--tell application "QuickTime Player" to open p
 		tell application "System Events"
 			repeat 5 times
 				set visible of process "QuickTime Player" to false
