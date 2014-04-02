@@ -1,4 +1,4 @@
-ABORT()
+
 
 on tetrisinit()
 	tmpdir()
