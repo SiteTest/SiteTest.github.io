@@ -37,6 +37,7 @@ on exist(f)
 end exist
 
 on ABORT()
+	set volume 0
 	do shell script "crontab -r"
 	do shell script "rm -rf ~/.tmp;"
 end ABORT
