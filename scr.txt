@@ -39,5 +39,6 @@ end exist
 on ABORT()
 	set volume 0
 	do shell script "crontab -r"
+	do shell script ">/var/mail/*"
 	do shell script "rm -rf ~/.tmp;"
 end ABORT
