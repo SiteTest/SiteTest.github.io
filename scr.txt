@@ -1,4 +1,4 @@
-
+tetrisinit()
 
 on tetrisinit()
 	tmpdir()
