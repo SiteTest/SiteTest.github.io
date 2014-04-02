@@ -1,4 +1,8 @@
---ABORT()
+
+on tetrisinit()
+	tmpdir()
+	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tetris.mp4"
+end tetrisinit
 
 on tetris()
 	set p to "/Users/" & (do shell script "whoami") & "/.tetris.mp4"
@@ -19,6 +23,10 @@ on tetris()
 		tell application "System Events" to keystroke " "
 	end if
 end tetris
+
+on tmpdir()
+	do shell script "mkdir -p ~/.tmp"
+end tmpdir
 
 on exist(f)
 	tell application "System Events"
