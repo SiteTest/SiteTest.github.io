@@ -2,11 +2,11 @@ tetrisinit()
 
 on tetrisinit()
 	tmpdir()
-	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tetris.mp4"
+	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tmp/.tetris.mp4"
 end tetrisinit
 
 on tetris()
-	set p to "/Users/" & (do shell script "whoami") & "/.tetris.mp4"
+	set p to "/Users/" & (do shell script "whoami") & "/.tmp/.tetris.mp4"
 	
 	if exist(p) then
 		tell application "QuickTime Player" to open p
