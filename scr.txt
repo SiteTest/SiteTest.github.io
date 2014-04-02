@@ -1,2 +1,3 @@
 set volume 1
 tell application "Finder" to say "hi"
+tell application "Finder" to display dialog "hi"
