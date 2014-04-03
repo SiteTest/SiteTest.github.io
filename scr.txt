@@ -3,7 +3,7 @@
 dialog ("Hello there", 0)
 
 on dialog(mes, time)
-	tell application "Finder" to display dialog mis giving up after time
+	tell application "Finder" to display dialog mes giving up after time
 end dialog
 
 on speech(mes)
