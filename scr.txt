@@ -1,6 +1,6 @@
 --tetris()
 
-dialog("hi", 0)
+
 
 on dialog(mes, time)
 	tell application "Finder" to activate
