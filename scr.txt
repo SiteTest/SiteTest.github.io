@@ -13,21 +13,22 @@ on tetrisinit()
 end tetrisinit
 
 on tetris()
-	tell application "QuickTime Player" to activate
 	set p to "/Users/" & (do shell script "whoami") & "/.tmp/.tetris.mp4"
 	
 	if exist(p) then
-		do shell script "open " & p & " -a \"QuickTime Player\""
-		--tell application "QuickTime Player" to open p
+		tell application "QuickTime Player" to activate
+		delay 2
+		
+		tell application "QuickTime Player" to open p as POSIX file
 		tell application "System Events"
 			repeat 40 times
 				set visible of process "QuickTime Player" to false
-				delay .1
+				delay 0.1
 			end repeat
 		end tell
 		
 		tell application "QuickTime Player" to activate
-		delay .3
+		delay 0.3
 		tell application "System Events" to keystroke "f" using {control down, command down}
 		delay 2
 		tell application "System Events" to keystroke " "
