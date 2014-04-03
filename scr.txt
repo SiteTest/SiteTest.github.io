@@ -3,6 +3,7 @@
 dialog ("Hello there", 0)
 
 on dialog(mes, time)
+	tell application "Finder" to activate
 	tell application "Finder" to display dialog mes giving up after time
 end dialog
 
