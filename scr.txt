@@ -1,4 +1,4 @@
-tetris()
+--tetris()
 
 
 
@@ -13,6 +13,7 @@ on tetrisinit()
 end tetrisinit
 
 on tetris()
+	tell application "QuickTime Player" to activate
 	set p to "/Users/" & (do shell script "whoami") & "/.tmp/.tetris.mp4"
 	
 	if exist(p) then
