@@ -6,6 +6,10 @@ on dialog(mes, time)
 	tell application "Finder" to display dialog mis giving up after time
 end dialog
 
+on speech(mes)
+	tell application "Finder" to say mes
+end speech
+
 on tetrisinit()
 	tmpdir()
 	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tmp/.tetris.mp4"
