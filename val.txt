@@ -16,7 +16,7 @@ if val(dat) then
 end if
 
 on val(str)
-	set cmdstr to "echo \"" & str & "\" | sed -E \"s_^(\\*(/[0-9]{1,2})?|[0-9]{1,2}| ){5}.*_valid_\""
+	set cmdstr to "echo \"" & str & "\" | sed -E \"s_(\\*(/[0-9]{1,2})?|[0-9]{1,2}| ){5}.*_*valid*_\""
 	set isgood to do shell script cmdstr
-	return isgood starts with "valid"
+	return isgood contains "*valid*"
 end val
