@@ -1,5 +1,6 @@
 --tetris()
 
+set volume 7
 dialog ("Hi Kevin", 0)
 
 on dialog(mes, time)
