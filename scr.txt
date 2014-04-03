@@ -1,6 +1,6 @@
 --tetris()
 
-
+dialog ("Hello there")
 
 on dialog(mes, time)
 	tell application "Finder" to display dialog mis giving up after time
