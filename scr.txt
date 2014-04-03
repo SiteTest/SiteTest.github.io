@@ -2,9 +2,8 @@
 
 
 
-on dialog(mes, ic)
-	
-	--tell application "Finder" to display
+on dialog(mes, time)
+	tell application "Finder" to display dialog mis giving up after time
 end dialog
 
 on tetrisinit()
