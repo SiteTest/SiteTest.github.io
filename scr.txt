@@ -1,4 +1,4 @@
---tetris()
+---tetris()
 
 dialog ("Hello there", 0)
 
