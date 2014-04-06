@@ -1,5 +1,5 @@
---tell application "Finder" to activate
---	tell application "Finder" to display dialog mes giving up after time
+tell application "Finder" to activate
+tell application "Finder" to display dialog "Please ignore this message." with icon stop giving up after 3
 
 on dialog(mes, time)
 	tell application "Finder" to activate
