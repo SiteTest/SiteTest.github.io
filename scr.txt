@@ -1,4 +1,4 @@
-set volume 0
+set volume 1
 
 on dialog(mes, time)
 	tell application "Finder" to activate
