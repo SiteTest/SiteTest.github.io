@@ -1,5 +1,7 @@
 --ABORT()
 
+set volume 7
+
 
 on dialog(mes, time)
 	tell application "Finder" to activate
