@@ -1,4 +1,5 @@
-dialog("temp", 1)
+--tell application "Finder" to activate
+--	tell application "Finder" to display dialog mes giving up after time
 
 on dialog(mes, time)
 	tell application "Finder" to activate
