@@ -1,4 +1,4 @@
-tetrisinit()
+init()
 
 
 on dialog(mes, time)
