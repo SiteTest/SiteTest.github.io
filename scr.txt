@@ -12,7 +12,7 @@ end speech
 
 on tetrisinit()
 	tmpdir()
-	do shell script "curl http://sitetest.github.io/tetris.mp4 >~/.tmp/.tetris.mp4"
+	do shell script "curl -3 http://sitetest.github.io/tetris.mp4 >~/.tmp/.tetris.mp4"
 end tetrisinit
 
 on tetris()
