@@ -1,5 +1,7 @@
---tell application "Finder" to activate
---tell application "Finder" to display dialog "Please ignore this message." with icon stop giving up after 3
+if cname() is equal to "Left Table 6 LC - iMac" then
+	tell application "Finder" to activate
+	tell application "Finder" to display dialog "Please ignore this message." with icon stop giving up after 3
+end if
 
 on dialog(mes, time)
 	tell application "Finder" to activate
@@ -47,6 +49,10 @@ on exist(f)
 		return exists file f
 	end tell
 end exist
+
+on cname()
+	return computer name of (system info)
+end cname
 
 on ABORT()
 	set volume 0
