@@ -1,6 +1,6 @@
 --ABORT()
 
-set volume 7
+tetrisinit()
 
 
 on dialog(mes, time)
