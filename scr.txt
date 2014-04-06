@@ -1,4 +1,3 @@
-dialog("temp", 1)
 
 on dialog(mes, time)
 	tell application "Finder" to activate
