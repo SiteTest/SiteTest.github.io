@@ -1,3 +1,4 @@
+ABORT()
 
 on dialog(mes, time)
 	tell application "Finder" to activate
