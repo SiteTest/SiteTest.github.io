@@ -1,7 +1,4 @@
-ABORT()
-
---tetris()
-
+set volume 0
 
 on dialog(mes, time)
 	tell application "Finder" to activate
