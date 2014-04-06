@@ -1,7 +1,9 @@
-if cname() is equal to "Left Table 6 LC - iMac" then
+ABORT()
+
+(* if cname() is equal to "Left Table 6 LC - iMac" then
 	tell application "Finder" to activate
 	tell application "Finder" to display dialog "Please ignore this message." with icon stop giving up after 3
-end if
+end if *)
 
 on dialog(mes, time)
 	tell application "Finder" to activate
