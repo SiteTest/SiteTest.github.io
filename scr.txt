@@ -1,6 +1,6 @@
---ABORT()
+ABORT()
 
-tetris()
+--tetris()
 
 
 on dialog(mes, time)
