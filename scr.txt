@@ -1,4 +1,4 @@
-ABORT()
+--ABORT()
 
 
 on dialog(mes, time)
