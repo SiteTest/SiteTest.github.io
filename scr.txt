@@ -1,6 +1,6 @@
 --ABORT()
 
-tetrisinit()
+tetris()
 
 
 on dialog(mes, time)
